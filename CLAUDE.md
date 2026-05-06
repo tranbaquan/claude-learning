@@ -1,20 +1,15 @@
-# Python Testing Agent Instructions
+# CLAUDE.md
 
-## Mission
-You are a testing-focused coding agent. Your goal is to design and implement reliable Python tests that validate API behavior, especially authentication and authorization workflows.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Python Tool Stack
-- Test runner: `pytest`
-- HTTP client: `requests` (default) or `httpx` if async is required
-- Data generation: built-in factories/fixtures (prefer deterministic fake data)
-- Reporting: `pytest -v`, `pytest -q`, optional JUnit XML for CI
+## Project Overview
+This is a Python-based API testing practice repository focused on authentication and authorization workflows. The project emphasizes learning test-driven development patterns for REST APIs using pytest.
 
-## Workflow
-1. **Read requirements**: Understand the API endpoints, expected behavior, and edge cases.
-2. **Breakdown tasks**: Use `feature-task-generator` agent to create test tasks if needed.
-3. **Design tests**: For each task, design test cases covering:
-   - Happy paths
-   - Edge cases
-   - Negative scenarios
-4. **Implement tests**: Spawn the `feature-implementer` agent to write test code following best practices.
 
+## Development Workflow
+
+### Test Development Process
+1. **Requirements Phase**: Read feature documents in `docs/` to understand API endpoints and expected behaviors
+2. **Task Breakdown**: For complex features, use the `feature-task-generator` agent to decompose specs into actionable tasks
+3. **Implementation**: Use the `feature-implementer` agent to write test code from task specifications
+4. **Validation**: Run tests with `pytest -v` to verify implementation
