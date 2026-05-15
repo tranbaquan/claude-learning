@@ -1,7 +1,7 @@
-# Auth API Test Guide (Manual)
+# Auth API Test Guide
 
 ## 1) Goal
-This document provides a practical checklist to manually test core authentication APIs with fake data.
+This document provides a practical checklist to manually test core authentication APIs.
 
 ## 2) Scope
 - `POST /auth/register`
@@ -10,13 +10,13 @@ This document provides a practical checklist to manually test core authenticatio
 - `GET /auth/profile`
 - `POST /auth/logout`
 
-## 3) Assumptions
+## 3) Server Details
 - Base URL: `https://api.example.local/v1`
 - Auth scheme: Bearer JWT for access token
 - Refresh token is sent in request body (if your API uses cookies, adapt accordingly)
 - Content type: `application/json`
 
-## 4) Fake Test Data
+## 4) Test Data
 Use these users during testing:
 
 | Label              | Email                         | Password       | Full name       | Notes                       |
