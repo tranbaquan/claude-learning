@@ -1,5 +1,9 @@
 .idea
 client
 server
+tests
+reports
 .playwright
 .playwright-mcp
+.playwright-cli
+pytest.ini

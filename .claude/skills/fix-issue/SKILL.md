@@ -3,6 +3,7 @@ name: fix-issue
 description: Fix a GitHub issue
 disable-model-invocation: true
 ---
+
 Analyze and fix the GitHub issue: $ARGUMENTS.
 
 1. Use `gh issue view` to get the issue details
