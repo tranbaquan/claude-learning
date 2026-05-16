@@ -1,3 +1,5 @@
 .idea
 client
 server
+.playwright
+.playwright-mcp

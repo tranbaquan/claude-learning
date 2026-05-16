@@ -15,7 +15,9 @@ Follow the command below to run the server setup skill with the instruction docu
 ```shell
 claude --permission-mode bypassPermissions -p "/server-setup docs/server/01-setup-server.md"
 claude --permission-mode bypassPermissions -p "/server-setup docs/server/02-auth.md"
+claude --permission-mode bypassPermissions -p "/server-setup docs/server/03-register-page.md"
+claude --permission-mode bypassPermissions -p "/server-setup docs/server/04-login-page.md"
 ```
 
-You can add more instruction documents and run the same command to set up different servers or implement different
-features.
+_You can add more instruction documents and run the same command to set up different servers or implement different
+features._
